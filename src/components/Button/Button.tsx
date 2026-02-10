@@ -1,15 +1,15 @@
 import React from "react";
 import "./Button.css";
 
-type ButtonSize = "small" | "medium" | "large";
-type ButtonVariant = "primary" | "secondary" | "text";
-type ButtonState = "default" | "hover" | "pressed" | "disabled";
+type Size = "small" | "medium" | "large";
+type Variant = "primary" | "secondary" | "text";
+type State = "default" | "hover" | "pressed";
 
 type ButtonProps = {
   children: React.ReactNode;
-  size?: ButtonSize;
-  variant?: ButtonVariant;
-  state?: ButtonState;
+  size?: Size;
+  variant?: Variant;
+  state?: State;
   disabled?: boolean;
   icon?: boolean;
   onClick?: () => void;
@@ -21,11 +21,11 @@ const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   state = "default",
   disabled = false,
-  icon = false,
+  icon = true,
   onClick,
 }) => {
-  const classes = `
-    ui-button
+  const className = `
+    ui-btn
     ${size}
     ${variant}
     ${state}
@@ -34,12 +34,12 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={classes}
+      className={className}
       disabled={disabled}
       onClick={onClick}
     >
       {icon && <span className="btn-icon">👤</span>}
-      {children}
+      <span>{children}</span>
       {icon && <span className="btn-icon">👤</span>}
     </button>
   );

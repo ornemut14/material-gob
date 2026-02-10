@@ -1,78 +1,128 @@
-.ui-button {
-  border: none;
-  border-radius: 1px;
-  font-weight: 600;
-  cursor: pointer;
+/* ================= BASE ================= */
 
-  display: flex;
+.ui-btn {
+  border: none;
+  border-radius: 1px; /* 👈 como pediste */
+  font-family: inherit;
+  font-weight: 500;
+
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 8px;
 
-  transition: all 0.2s ease;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 /* ================= SIZES ================= */
 
-.ui-button.small {
-  height: 32px;
-  padding: 0 12px;
+/* ================= SIZES ================= */
+
+.ui-btn.small {
+  width: 99px;
+  height: 33px;
   font-size: 12px;
 }
 
-.ui-button.medium {
+.ui-btn.medium {
+  width: 130px;
   height: 40px;
-  padding: 0 18px;
   font-size: 14px;
 }
 
-/* ================= VARIANTS ================= */
-
-.ui-button.primary {
-  background: #f37021;
-  color: white;
+.ui-btn.large {
+  width: 183px;
+  height: 43px;
+  font-size: 16px;
 }
 
-.ui-button.secondary {
-  background: #3f3f3f;
-  color: white;
+
+/* ================= PRIMARY ================= */
+
+/* Default */
+.ui-btn.primary.default {
+  background: #EC6608;
+  color: #FFFFFF;
 }
 
-.ui-button.text {
+/* Hover */
+.ui-btn.primary.hover {
+  background: #EF8031;
+  color: #FFFFFF;
+}
+
+/* Pressed */
+.ui-btn.primary.pressed {
+  background: #C55507;
+  color: #FFFFFF;
+}
+
+/* Disabled */
+.ui-btn.primary.disabled,
+.ui-btn.primary:disabled {
+  background: #F9CCAD;
+  color: #FFFFFF;
+}
+
+/* ================= SECONDARY ================= */
+
+/* Default */
+.ui-btn.secondary.default {
+  background: #413E43;
+  color: #FFFFFF;
+}
+
+/* Hover */
+.ui-btn.secondary.hover {
+  background: #615E62;
+  color: #FFFFFF;
+}
+
+/* Pressed */
+.ui-btn.secondary.pressed {
+  background: #C7C7C7;
+  color: #FFFFFF;
+}
+
+/* Disabled */
+.ui-btn.secondary.disabled,
+.ui-btn.secondary:disabled {
+  background: #F5F5F5;
+  color: #C7C7C7;
+}
+
+/* ================= TEXT ================= */
+
+/* Default */
+.ui-btn.text.default {
   background: transparent;
-  color: #3f3f3f;
+  color: #FFFFFF;
 }
 
-/* ================= STATES ================= */
-
-.ui-button.default {
-  opacity: 1;
+/* Hover */
+.ui-btn.text.hover {
+  background: transparent;
+  color: #615E62;
 }
 
-.ui-button.hover:hover {
-  filter: brightness(1.1);
+/* Pressed */
+.ui-btn.text.pressed {
+  background: transparent;
+  color: #C7C7C7;
 }
 
-.ui-button.pressed {
-  filter: brightness(0.9);
-}
-
-.ui-button:active {
-  transform: scale(0.97);
-}
-
-/* ================= DISABLED ================= */
-
-.ui-button.disabled,
-.ui-button:disabled {
-  background: #e0e0e0;
-  color: #aaa;
-  cursor: not-allowed;
-  pointer-events: none;
+/* Disabled */
+.ui-btn.text.disabled,
+.ui-btn.text:disabled {
+  background: transparent;
+  color: #F5F5F5;
 }
 
 /* ================= ICON ================= */
 
 .btn-icon {
   font-size: 14px;
+  display: flex;
+  align-items: center;
 }
