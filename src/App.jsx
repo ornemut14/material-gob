@@ -1,42 +1,47 @@
 import Button from "./components/Button";
-
+import UserplusIcon from "./components/Icons/usericons/userplusicon/userplusicon";
 
 function App() {
   return (
-    <div style={{ padding: "40px" }}>
+    <div style={{ display: "flex", gap: "20px", padding: "40px" }}>
 
-      <h2>Small</h2>
-
-      <Button size="small" variant="primary">
+      {/* PRIMARY */}
+      <Button variant="primary" size="medium">
         Primario
       </Button>
 
-      <Button size="small" variant="secondary">
+      <Button variant="primary" size="medium" icon>
+        Primario + Icon
+      </Button>
+
+
+      {/* SECONDARY */}
+      <Button variant="secondary" size="medium" primaryicon={<UserplusIcon />} seconda>
         Secundario
       </Button>
 
-      <Button size="small" variant="text">
+      <Button variant="secondary" size="medium" icon>
+        Secundario + Icon
+      </Button>
+
+
+      {/* TEXT */}
+      <Button variant="text" size="medium">
         Texto
       </Button>
 
-      <h2 style={{ marginTop: "30px" }}>Medium</h2>
-
-      <Button size="medium" variant="primary" icon>
-        Botón
+      <Button variant="text" size="medium" icon>
+        Texto + Icon
       </Button>
 
-      <Button size="medium" variant="secondary" icon>
-        Botón
-      </Button>
 
-      <Button size="medium" variant="text">
-        Texto
-      </Button>
-
-      <h2 style={{ marginTop: "30px" }}>Disabled</h2>
-
-      <Button disabled>
-        Deshabilitado
+      {/* CUSTOM SIZE */}
+      <Button
+        variant="primary"
+        width="220px"
+        height="50px"
+      >
+        Custom Size
       </Button>
 
     </div>

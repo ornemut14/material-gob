@@ -1,6 +1,9 @@
 import React from "react";
 import "./Button.css";
 
+// 👉 Importamos tu ícono
+import UserPlusIcon from "../Icons/usericons/userplusicon/userplusicon";
+
 type Size = "small" | "medium" | "large";
 type Variant = "primary" | "secondary" | "text";
 type State = "default" | "hover" | "pressed";
@@ -12,6 +15,8 @@ type ButtonProps = {
   state?: State;
   disabled?: boolean;
   icon?: boolean;
+  width?: string;
+  height?: string;
   onClick?: () => void;
 };
 
@@ -21,7 +26,9 @@ const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   state = "default",
   disabled = false,
-  icon = true,
+  icon = false,
+  width,
+  height,
   onClick,
 }) => {
   const className = `
@@ -32,15 +39,31 @@ const Button: React.FC<ButtonProps> = ({
     ${disabled ? "disabled" : ""}
   `;
 
+  const style = {
+    width,
+    height,
+  };
+
   return (
     <button
       className={className}
       disabled={disabled}
       onClick={onClick}
+      style={style}
     >
-      {icon && <span className="btn-icon">👤</span>}
+      {icon && (
+        <span className="btn-icon">
+          
+        </span>
+      )}
+
       <span>{children}</span>
-      {icon && <span className="btn-icon">👤</span>}
+
+      {icon && (
+        <span className="btn-icon">
+          <UserPlusIcon variant="white" />
+        </span>
+      )}
     </button>
   );
 };
