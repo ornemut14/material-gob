@@ -2,7 +2,7 @@
 
 .ui-btn {
   border: none;
-  border-radius: 1px; /* 👈 como pediste */
+  border-radius: 2px; /* 👈 como pediste */
   font-family: inherit;
   font-weight: 500;
 
@@ -47,13 +47,13 @@
 }
 
 /* Hover */
-.ui-btn.primary.hover {
+.ui-btn.primary:hover {
   background: #EF8031;
   color: #FFFFFF;
 }
 
 /* Pressed */
-.ui-btn.primary.pressed {
+.ui-btn.primary:active {
   background: #C55507;
   color: #FFFFFF;
 }
@@ -74,13 +74,13 @@
 }
 
 /* Hover */
-.ui-btn.secondary.hover {
+.ui-btn.secondary:hover {
   background: #615E62;
   color: #FFFFFF;
 }
 
 /* Pressed */
-.ui-btn.secondary.pressed {
+.ui-btn.secondary:active {
   background: #C7C7C7;
   color: #FFFFFF;
 }
@@ -97,17 +97,17 @@
 /* Default */
 .ui-btn.text.default {
   background: transparent;
-  color: #FFFFFF;
+  color: #000000;
 }
 
 /* Hover */
-.ui-btn.text.hover {
+.ui-btn.text:hover {
   background: transparent;
   color: #615E62;
 }
 
 /* Pressed */
-.ui-btn.text.pressed {
+.ui-btn.text:active {
   background: transparent;
   color: #C7C7C7;
 }

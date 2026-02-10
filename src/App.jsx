@@ -6,17 +6,17 @@ function App() {
     <div style={{ display: "flex", gap: "20px", padding: "40px" }}>
 
       {/* PRIMARY */}
-      <Button variant="primary" size="medium">
+      <Button variant="primary" size="small" Primaryicon={<UserplusIcon variant="black" size={20} />}>
         Primario
       </Button>
 
-      <Button variant="primary" size="medium" icon>
+      <Button variant="secondary" size="large" Secondaryicon={<UserplusIcon variant="white" size={20} />}>
         Primario + Icon
       </Button>
 
 
       {/* SECONDARY */}
-      <Button variant="secondary" size="medium" primaryicon={<UserplusIcon />} seconda>
+      <Button variant="text" size="medium" primaryicon={<UserplusIcon />} seconda>
         Secundario
       </Button>
 
