@@ -14,7 +14,8 @@ type ButtonProps = {
   variant?: Variant;
   state?: State;
   disabled?: boolean;
-  icon?: boolean;
+  Primaryicon?: any;
+  Secondaryicon?: any;
   width?: string;
   height?: string;
   onClick?: () => void;
@@ -26,7 +27,8 @@ const Button: React.FC<ButtonProps> = ({
   variant = "primary",
   state = "default",
   disabled = false,
-  icon = false,
+  Primaryicon = false,
+  Secondaryicon = false,
   width,
   height,
   onClick,
@@ -51,19 +53,17 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       style={style}
     >
-      {icon && (
-        <span className="btn-icon">
-          
-        </span>
-      )}
+      {Primaryicon && 
+      <span className="btn-icon">
+        {Primaryicon}
+        </span>}
 
       <span>{children}</span>
 
-      {icon && (
-        <span className="btn-icon">
-          <UserPlusIcon variant="white" />
-        </span>
-      )}
+      {Secondaryicon && 
+      <span className="btn-icon">
+          {Secondaryicon}
+        </span>}
     </button>
   );
 };
