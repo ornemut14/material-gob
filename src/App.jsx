@@ -1,48 +1,11 @@
 import Button from "./components/Button";
 import UserplusIcon from "./components/Icons/usericons/userplusicon/userplusicon";
+import MainCard from "./components/maincard/maincard";
 
 function App() {
   return (
     <div style={{ display: "flex", gap: "20px", padding: "40px" }}>
-
-      {/* PRIMARY */}
-      <Button variant="primary" size="small" Primaryicon={<UserplusIcon variant="black" size={20} />}>
-        Primario
-      </Button>
-
-      <Button variant="secondary" size="large" Secondaryicon={<UserplusIcon variant="white" size={20} />}>
-        Primario + Icon
-      </Button>
-
-
-      {/* SECONDARY */}
-      <Button variant="text" size="medium" primaryicon={<UserplusIcon />} seconda>
-        Secundario
-      </Button>
-
-      <Button variant="secondary" size="medium" icon>
-        Secundario + Icon
-      </Button>
-
-
-      {/* TEXT */}
-      <Button variant="text" size="medium">
-        Texto
-      </Button>
-
-      <Button variant="text" size="medium" icon>
-        Texto + Icon
-      </Button>
-
-
-      {/* CUSTOM SIZE */}
-      <Button
-        variant="primary"
-        width="220px"
-        height="50px"
-      >
-        Custom Size
-      </Button>
+      <MainCard items={["Trabajo", "Televisores"]} itemscolor="light" />
 
     </div>
   );
