@@ -25,7 +25,7 @@ function App() {
         <MenuOption icon={<UserplusIcon variant="white"/>} text="consulta y Solicitudes" onclick={() => alert("hola")} variant={1} />
         <MenuOption icon={<UserplusIcon variant="white"/>} text="consulta y Solicitudes" onclick={() => alert("hola")} variant={1} />
       </Menu>
-      <GobButton onClick={() => handleMenuToggle()}>hola</GobButton>
+      <GobButton onClick={() => handleMenuToggle()} PrimaryiconName="marketplace" SecondaryiconName="marketplace">hola</GobButton>
       
 
     </div>
