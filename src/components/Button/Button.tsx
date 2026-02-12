@@ -1,27 +1,12 @@
 import React from "react";
 import "./Button.css";
+import { GobButtonProps  } from "./Button.types";
 
 // 👉 Importamos tu ícono
 import UserPlusIcon from "../Icons/usericons/userplusicon/userplusicon";
 
-type Size = "small" | "medium" | "large";
-type Variant = "primary" | "secondary" | "text";
-type State = "default" | "hover" | "pressed";
 
-type ButtonProps = {
-  children: React.ReactNode;
-  size?: Size;
-  variant?: Variant;
-  state?: State;
-  disabled?: boolean;
-  Primaryicon?: any;
-  Secondaryicon?: any;
-  width?: string;
-  height?: string;
-  onClick?: () => void;
-};
-
-const Button: React.FC<ButtonProps> = ({
+export const GobButton = ({
   children,
   size = "medium",
   variant = "primary",
@@ -32,7 +17,7 @@ const Button: React.FC<ButtonProps> = ({
   width,
   height,
   onClick,
-}) => {
+}: GobButtonProps) => {
   const className = `
     ui-btn
     ${size}
@@ -53,19 +38,17 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       style={style}
     >
-      {Primaryicon && 
-      <span className="btn-icon">
-        {Primaryicon}
+      {Primaryicon &&
+        <span className="btn-icon">
+          {Primaryicon}
         </span>}
 
       <span>{children}</span>
 
-      {Secondaryicon && 
-      <span className="btn-icon">
+      {Secondaryicon &&
+        <span className="btn-icon">
           {Secondaryicon}
         </span>}
     </button>
   );
 };
-
-export default Button;
