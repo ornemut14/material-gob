@@ -1,1 +1,2 @@
-export { default } from "./Button";
+export { GobButton } from "./Button";
+export type { GobButtonProps } from "./Button.types";
