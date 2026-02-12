@@ -1,3 +1,5 @@
+import { iconName, variant } from "../../types/icons.types";
+
 type Size = "small" | "medium" | "large";
 type Variant = "primary" | "secondary" | "text";
 type State = "default" | "hover" | "pressed";
@@ -8,8 +10,10 @@ export type GobButtonProps = {
     variant?: Variant;
     state?: State;
     disabled?: boolean;
-    Primaryicon?: any;
-    Secondaryicon?: any;
+    PrimaryiconName?: iconName;
+    PrimaryiconVariant?: variant;
+    SecondaryiconName?: iconName;
+    SecondaryiconVariant?: variant;
     width?: string;
     height?: string;
     onClick?: () => void;

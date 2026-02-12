@@ -1,6 +1,6 @@
 {
   "name": "@kucho77/material-gob",
-  "version": "0.3.0",
+  "version": "0.4.4",
   "description": "Reusable React UI components",
   "license": "MIT",
   "private": false,
@@ -9,7 +9,7 @@
   "module": "dist/material-gob.es.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist","public","src"
   ],
   "exports": {
     ".": {

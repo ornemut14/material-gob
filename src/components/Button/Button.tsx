@@ -1,10 +1,6 @@
-import React from "react";
+import { GobIcon } from "../GobIcon";
 import "./Button.css";
-import { GobButtonProps  } from "./Button.types";
-
-// 👉 Importamos tu ícono
-import UserPlusIcon from "../Icons/usericons/userplusicon/userplusicon";
-
+import { GobButtonProps } from "./Button.types";
 
 export const GobButton = ({
   children,
@@ -12,8 +8,10 @@ export const GobButton = ({
   variant = "primary",
   state = "default",
   disabled = false,
-  Primaryicon = false,
-  Secondaryicon = false,
+  PrimaryiconName,
+  PrimaryiconVariant,
+  SecondaryiconName,
+  SecondaryiconVariant,
   width,
   height,
   onClick,
@@ -38,17 +36,19 @@ export const GobButton = ({
       onClick={onClick}
       style={style}
     >
-      {Primaryicon &&
-        <span className="btn-icon">
-          {Primaryicon}
-        </span>}
+      {PrimaryiconName &&
+        // <span className="btn-icon">
+        <GobIcon name={PrimaryiconName} variant={PrimaryiconVariant ? PrimaryiconVariant : 'black'}></GobIcon>
+        // </span>
+      }
 
       <span>{children}</span>
 
-      {Secondaryicon &&
-        <span className="btn-icon">
-          {Secondaryicon}
-        </span>}
+      {SecondaryiconName &&
+        // <span className="btn-icon">
+        <GobIcon name={SecondaryiconName} variant={SecondaryiconVariant ? SecondaryiconVariant : 'black'}></GobIcon>
+        // </span>
+      }
     </button>
   );
 };
