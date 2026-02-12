@@ -1,38 +1,21 @@
-import React from "react";
+import { GobIcon } from "../GobIcon";
 import "./Button.css";
+import { GobButtonProps } from "./Button.types";
 
-// 👉 Importamos tu ícono
-import UserPlusIcon from "../Icons/usericons/userplusicon/userplusicon";
-
-type Size = "small" | "medium" | "large";
-type Variant = "primary" | "secondary" | "text";
-type State = "default" | "hover" | "pressed";
-
-type ButtonProps = {
-  children: React.ReactNode;
-  size?: Size;
-  variant?: Variant;
-  state?: State;
-  disabled?: boolean;
-  Primaryicon?: any;
-  Secondaryicon?: any;
-  width?: string;
-  height?: string;
-  onClick?: () => void;
-};
-
-const Button: React.FC<ButtonProps> = ({
+export const GobButton = ({
   children,
   size = "medium",
   variant = "primary",
   state = "default",
   disabled = false,
-  Primaryicon = false,
-  Secondaryicon = false,
+  PrimaryiconName,
+  PrimaryiconVariant,
+  SecondaryiconName,
+  SecondaryiconVariant,
   width,
   height,
   onClick,
-}) => {
+}: GobButtonProps) => {
   const className = `
     ui-btn
     ${size}
@@ -53,19 +36,19 @@ const Button: React.FC<ButtonProps> = ({
       onClick={onClick}
       style={style}
     >
-      {Primaryicon && 
-      <span className="btn-icon">
-        {Primaryicon}
-        </span>}
+      {PrimaryiconName &&
+        // <span className="btn-icon">
+        <GobIcon name={PrimaryiconName} variant={PrimaryiconVariant ? PrimaryiconVariant : 'black'}></GobIcon>
+        // </span>
+      }
 
       <span>{children}</span>
 
-      {Secondaryicon && 
-      <span className="btn-icon">
-          {Secondaryicon}
-        </span>}
+      {SecondaryiconName &&
+        // <span className="btn-icon">
+        <GobIcon name={SecondaryiconName} variant={SecondaryiconVariant ? SecondaryiconVariant : 'black'}></GobIcon>
+        // </span>
+      }
     </button>
   );
 };
-
-export default Button;
