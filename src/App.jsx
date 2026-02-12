@@ -4,6 +4,7 @@ import UserplusIcon from "./components/Icons/usericons/userplusicon/userplusicon
 import MainCard from "./components/maincard/maincard";
 import Menu from "./components/menu/menu";
 import MenuOption from "./components/menu/menuoptions/menuoption";
+import GobIcon from "./components/Icons/gobicon/gobicon";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
         <MenuOption icon={<UserplusIcon variant="white"/>} text="consulta y Solicitudes" onclick={() => alert("hola")} variant={1} />
       </Menu>
       <Button onClick={() => handleMenuToggle()}>Hola</Button>
+      <GobIcon name="notebook" variant="black" />
 
     </div>
   );
