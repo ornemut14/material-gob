@@ -17,7 +17,7 @@ const Menu: React.FC<MenuProps> = ({children, variant=1, height="auto", width="a
     const [shouldRender, setShouldRender] = useState(true)
     useEffect(() => {
         if(shouldRender === true){
-            setShouldRender(false)
+            setTimeout(() => setShouldRender(false), 1000)
         }else{
             setShouldRender(true)
         }

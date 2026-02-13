@@ -38,9 +38,7 @@ export const GobButton = ({
     >
       <span className="btn-icon-left">
       {PrimaryiconName &&
-        // <span className="btn-icon">
         <GobIcon name={PrimaryiconName} variant={PrimaryiconVariant ? PrimaryiconVariant : 'black'}></GobIcon>
-        // </span>
       }
       </span>
 
@@ -48,9 +46,7 @@ export const GobButton = ({
       
       <span className="btn-icon-right">
       {SecondaryiconName &&
-        // <span className="btn-icon">
         <GobIcon name={SecondaryiconName} variant={SecondaryiconVariant ? SecondaryiconVariant : 'black'}></GobIcon>
-        // </span>
       }
       </span>
     </button>

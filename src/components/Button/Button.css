@@ -12,6 +12,7 @@
   align-items: center;
   gap: 8px;
   padding: 0px;
+  overflow: hidden;
 
   cursor: pointer;
   transition: background 0.2s ease, color 0.2s ease;
