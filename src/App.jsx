@@ -20,11 +20,13 @@ function App() {
   return (
     <div style={{ display: "flex", gap: "20px", padding: "40px" }}>
       <MainCard items={["Trabajo", "Televisores"]} itemscolor="light" />
-      <Menu isopen={ismenuopen} axis="vertical">
-        <MenuOption icon={<UserplusIcon variant="white"/>} text="consulta y Solicitudes" onclick={() => alert("hola")} variant={1} />
-        <MenuOption icon={<UserplusIcon variant="white"/>} text="consulta y Solicitudes" onclick={() => alert("hola")} variant={1} />
-        <MenuOption icon={<UserplusIcon variant="white"/>} text="consulta y Solicitudes" onclick={() => alert("hola")} variant={1} />
+      <div style={{position: "relative", top: "40px"}}>
+      <Menu isopen={ismenuopen} axis="vertical" variant={2}>
+        <MenuOption iconName="calendarday" text="consulta" onclick={() => alert("hola")} variant={3} />
+        <MenuOption iconName="calendarstar" text="consulta y Solicitudes" onclick={() => alert("hola")} variant={2} />
+        <MenuOption iconName="marketplace" text="consulta y Solicitudes" onclick={() => alert("hola")} variant={1} />
       </Menu>
+      </div>
       <GobButton onClick={() => handleMenuToggle()} PrimaryiconName="marketplace" SecondaryiconName="marketplace">hola</GobButton>
       
 

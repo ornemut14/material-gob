@@ -1,4 +1,10 @@
+.menu-gob-container{
+    position:relative;
+    overflow: visible;
+    z-index: 9999;
+}
 .menu-gob-open-vertical{
+    position: absolute;
     overflow: hidden;
     animation-name: menu-gob-opening-vertical;
     animation-duration: 2s;
@@ -6,6 +12,7 @@
 }
 
 .menu-gob-closed-vertical{
+    position: absolute;
     overflow: hidden;
     animation-name: menu-gob-closening-vertical;
     animation-duration: 1s;
@@ -13,6 +20,7 @@
 }
 
 .menu-gob-open-horizontal{
+    position: absolute;
     overflow: hidden;
     animation-name: menu-gob-opening-horizontal;
     animation-duration: 2s;
@@ -20,6 +28,7 @@
 }
 
 .menu-gob-closed-horizontal{
+    position: absolute;
     overflow: hidden;
     animation-name: menu-gob-closening-horizontal;
     animation-duration: 1s;
