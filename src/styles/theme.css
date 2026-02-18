@@ -1,0 +1,18 @@
+:root {
+  --gob-primary-color-100: #f9ccad;
+  --gob-primary-color-200: #ef8031;
+  --gob-primary-color-300: #ec6608;
+  --gob-primary-color-400: #c55507;
+
+  --gob-secondary-color-100: #ffffff;
+  --gob-secondary-color-200: #f5f5f5;
+  --gob-secondary-color-300: #eeebeb;
+  --gob-secondary-color-400: #c7c7c7;
+  --gob-secondary-color-500: #615e62;
+  --gob-secondary-color-600: #413e43;
+  --gob-secondary-color-700: #000000;
+  
+  --gob-alternative-color-100: #fed422;
+  --gob-alternative-color-200: #ff8300;
+  --gob-alternative-color-300: #e43d30;
+}

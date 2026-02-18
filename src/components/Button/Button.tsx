@@ -36,19 +36,19 @@ export const GobButton = ({
       onClick={onClick}
       style={style}
     >
-      {PrimaryiconName &&
-        // <span className="btn-icon">
-        <GobIcon name={PrimaryiconName} variant={PrimaryiconVariant ? PrimaryiconVariant : 'black'}></GobIcon>
-        // </span>
-      }
+      <span className="btn-icon-left">
+        {PrimaryiconName &&
+          <GobIcon name={PrimaryiconName} variant={PrimaryiconVariant ? PrimaryiconVariant : 'black'}></GobIcon>
+        }
+      </span>
 
-      <span>{children}</span>
+      <span className="gob-button-middle-text">{children}</span>
 
-      {SecondaryiconName &&
-        // <span className="btn-icon">
-        <GobIcon name={SecondaryiconName} variant={SecondaryiconVariant ? SecondaryiconVariant : 'black'}></GobIcon>
-        // </span>
-      }
+      <span className="btn-icon-right">
+        {SecondaryiconName &&
+          <GobIcon name={SecondaryiconName} variant={SecondaryiconVariant ? SecondaryiconVariant : 'black'}></GobIcon>
+        }
+      </span>
     </button>
   );
 };
