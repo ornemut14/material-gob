@@ -1,6 +1,6 @@
-import userplusiconcolor from "./svgs/userplusiconcolor.svg"
-import userplusiconblack from "./svgs/userplusiconblack.svg"
-import userplusiconwhite from "./svgs/userplusiconwhite.svg"
+import userplusiconcolor from "./userplusiconcolor.svg"
+import userplusiconblack from "./userplusiconblack.svg"
+import userplusiconwhite from "./userplusiconwhite.svg"
 
 type variant = "color" | "black" | "white"
 

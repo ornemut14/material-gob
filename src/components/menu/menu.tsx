@@ -17,7 +17,7 @@ const Menu: React.FC<MenuProps> = ({children, variant=1, height="auto", width="a
     const [shouldRender, setShouldRender] = useState(true)
     useEffect(() => {
         if(shouldRender === true){
-            setShouldRender(false)
+            setTimeout(() => setShouldRender(false), 960)
         }else{
             setShouldRender(true)
         }
@@ -46,17 +46,19 @@ const Menu: React.FC<MenuProps> = ({children, variant=1, height="auto", width="a
     }
 
     if(variant === 1){
-        estilos1 = {...estilos1, backgroundColor: "blue"}
+        estilos1 = {...estilos1, backgroundColor: "transparent"}
     }else{
         estilos1 = {...estilos1, backgroundColor: "#C7C7C7"}
     }
 
-    return <div className={isopen === true ? `menu-gob-open-${axis}` : `menu-gob-closed-${axis}`}>
-        {shouldRender && <div style={estilos1}>
-        {children}
-    </div>   
-        }
-    </div>
+    return <div className="menu-gob-container">
+            <div className={isopen === true ? `menu-gob-open-${axis}` : `menu-gob-closed-${axis}`}>
+            {shouldRender && <div style={estilos1}>
+            {children}
+        </div>   
+            }
+        </div>
+        </div>
 }
 
 export default Menu;
