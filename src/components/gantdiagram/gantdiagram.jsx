@@ -1,9 +1,8 @@
 import dayjs from "dayjs";
 import "dayjs/locale/es";
 import { useState } from "react";
-import singlearrow from "../../assets/icons/singlearrow.svg";
+import singlearrow from "./svgs/singlearrow.svg";
 import "./gantdiagram.css";
-import Tab from "@mui/material/Tab";
 import Table1 from "./table1/table1";
 
 function GantDiagram() {
