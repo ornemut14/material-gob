@@ -5,11 +5,13 @@ import Menu from "./components/menu/menu";
 import { MenuOption } from "./components/menu/menuoptions/menuoption";
 import { GobButton } from "./components/Button/Button";
 import { GobIcon } from "./components/GobIcon";
+import Select from "./components/select/select";
 
 function App() {
 
   const [ismenuopen, setIsmenuopen] = useState(false)
-
+  const [selectvalue, setSelectvalue] = useState(null)
+  const selectoptions = ["Opción 1", "Opción 2", "Opción 3", "Opción 4"]
   const handleMenuToggle = () =>{
     if(ismenuopen){
       setIsmenuopen(false)
@@ -29,7 +31,7 @@ function App() {
       </Menu>
       </div>
       <GobButton onClick={() => handleMenuToggle()} PrimaryiconName="calendarday" SecondaryiconName="marketplace">hola</GobButton>
-
+      <Select setvalue={setSelectvalue} options={selectoptions} placeholder="Selecciona algo" />
     </div>
   );
 }

@@ -1,0 +1,53 @@
+.general-select-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: visible;
+}
+
+.general-select-container * {
+    user-select: none;
+}
+
+.general-select-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.general-select-icon-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.general-select-placeholder{
+    color: #615E62;
+    white-space: nowrap;
+}
+
+
+.general-select-options{
+    position: absolute;
+  top: 125%;
+  left: 0;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: start;
+    background-color: #F5F5F5;
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
+    z-index: 999;
+}
+
+.general-select-option{
+    color: #413E43;
+}
+
+.general-select-option:hover{
+    border-radius: inherit;
+    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
+}
