@@ -2,8 +2,9 @@ import { useState } from "react";
 import UserplusIcon from "./components/Icons/usericons/userplusicon/userplusicon";
 import MainCard from "./components/maincard/maincard";
 import Menu from "./components/menu/menu";
-import MenuOption from "./components/menu/menuoptions/menuoption";
+import { MenuOption } from "./components/menu/menuoptions/menuoption";
 import { GobButton } from "./components/Button/Button";
+import { GobIcon } from "./components/GobIcon";
 
 function App() {
 
@@ -22,13 +23,12 @@ function App() {
       <MainCard items={["Trabajo", "Televisores"]} itemscolor="light" />
       <div style={{position: "relative", top: "40px"}}>
       <Menu isopen={ismenuopen} axis="vertical" variant={2}>
-        <MenuOption iconName="calendarday" text="consulta" onclick={() => alert("hola")} variant={3} />
+        <MenuOption text="consulta" onclick={() => alert("hola")} variant={3} />
         <MenuOption iconName="calendarstar" text="consulta y Solicitudes" onclick={() => alert("hola")} variant={2} />
         <MenuOption iconName="marketplace" text="consulta y Solicitudes" onclick={() => alert("hola")} variant={1} />
       </Menu>
       </div>
-      <GobButton onClick={() => handleMenuToggle()} PrimaryiconName="marketplace" SecondaryiconName="marketplace">hola</GobButton>
-      
+      <GobButton onClick={() => handleMenuToggle()} PrimaryiconName="calendarday" SecondaryiconName="marketplace">hola</GobButton>
 
     </div>
   );
