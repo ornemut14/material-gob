@@ -11,8 +11,10 @@ type PropsMaincard = {
     comillascolor?: comillascolor,
     comillasdirection?: comillasdirection,
     itemscolor?: itemscolor,
-    backgroundcolor?: backgroundcolor
+    backgroundcolor?: backgroundcolor,
     items: [],
+    title1: string,
+    title2: string,
     height?: string,
     width?: string,
     padding?: string
@@ -24,6 +26,8 @@ const MainCard: React.FC<PropsMaincard> = ({
     comillasdirection="up",
     comillascolor="white",
     items = ["+ Gestión", "+ Transparencia"],
+    title1 = "Nuestro",
+    title2 = "Trabajo",
     height = "256px", 
     width = "496px",
     padding = "48px"
@@ -72,8 +76,8 @@ const MainCard: React.FC<PropsMaincard> = ({
 return <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start" , backgroundColor: "#413E43", width: width, height: height, padding: padding, borderRadius: "2px", gap: "0px"}}>
     <img src={comillascolor === "white" ? comillaswhite : (comillascolor === "orange" ? comillasorange : comillaslight)} style={{rotate: rotation}} />
     <div style={{display: "flex", flexDirection: "row", gap: "10px"}}>
-        <h2 style={{color: "#FFFFFF", fontFamily: "Ubuntu", fontWeight: "200", fontSize: "40px"}}>Nuestro</h2>
-    <h2 style={{color: "#FFFFFF", fontFamily: "Ubuntu", fontWeight: "700", fontSize: "40px"}}>Trabajo</h2>
+        <h2 style={{color: "#FFFFFF", fontFamily: "Ubuntu", fontWeight: "200", fontSize: "40px"}}>{title1}</h2>
+    <h2 style={{color: "#FFFFFF", fontFamily: "Ubuntu", fontWeight: "700", fontSize: "40px"}}>{title2}</h2>
     </div>
     <div style={{display: "flex", flexDirection: "column", justifyItems: "flex-start"}}>
         {items.map((obj, index) => (<h4 key={index} style={{color: itmcolor, fontFamily: "Ubuntu", fontWeight: "200", fontSize: "19px", textTransform: "uppercase", margin: "0px", textAlign: "justify"}}>{obj}</h4>) )}

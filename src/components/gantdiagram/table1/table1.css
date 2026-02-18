@@ -1,0 +1,41 @@
+.diagram-table-wrapperr{
+    height: fit-content;
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.diagram-inner-thead{
+    position: sticky;
+    top: 0;
+}
+
+.diagram-inner-table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.diagram-inner-th{
+    background-color: #C7C7C7;
+}
+
+.gd-days-h{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gd-days-h-container{
+    width: 26px;
+    background-color: #C7C7C7;
+}
+
+.gd-area-rows{
+    background-color: #EEEBEB;
+    text-transform: uppercase;
+    height: 50px;
+}
+
+.gd-area-rows-name{
+    padding-left: 20px;
+}
