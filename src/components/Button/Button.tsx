@@ -37,17 +37,17 @@ export const GobButton = ({
       style={style}
     >
       <span className="btn-icon-left">
-      {PrimaryiconName &&
-        <GobIcon name={PrimaryiconName} variant={PrimaryiconVariant ? PrimaryiconVariant : 'black'}></GobIcon>
-      }
+        {PrimaryiconName &&
+          <GobIcon name={PrimaryiconName} variant={PrimaryiconVariant ? PrimaryiconVariant : 'black'}></GobIcon>
+        }
       </span>
 
       <span className="gob-button-middle-text">{children}</span>
-      
+
       <span className="btn-icon-right">
-      {SecondaryiconName &&
-        <GobIcon name={SecondaryiconName} variant={SecondaryiconVariant ? SecondaryiconVariant : 'black'}></GobIcon>
-      }
+        {SecondaryiconName &&
+          <GobIcon name={SecondaryiconName} variant={SecondaryiconVariant ? SecondaryiconVariant : 'black'}></GobIcon>
+        }
       </span>
     </button>
   );

@@ -1,2 +1,3 @@
+import type { IconName } from "../icons/icons.generated";
+export type iconName = IconName
 export type variant = "color" | "black" | "white"
-export type iconName = null | "calendarday" | "calendarstar" | "marketplace" | "notebook"
