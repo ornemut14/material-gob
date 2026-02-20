@@ -19,31 +19,31 @@ export const GobMainCard = ({
     let bckcolor = "black"
     switch (backgroundcolor) {
         case "black":
-            bckcolor = "#413E43";
+            bckcolor = "var(--gob-secondary-color-600)";
             break;
         case "orange":
-            bckcolor = "#EC6608";
+            bckcolor = "var(--gob-primary-color-300)";
             break;
         case "light":
-            bckcolor = "#615E62";
+            bckcolor = "var(--gob-secondary-color-500)";
             break;
         default:
-            bckcolor = "#615E62";
+            bckcolor = "var(--gob-secondary-color-500)";
     }
 
     let itmcolor = "black"
     switch (itemscolor) {
         case "white":
-            itmcolor = "#FFFFFF";
+            itmcolor = "var(--gob-secondary-color-100)";
             break;
         case "orange":
-            itmcolor = "#EC6608";
+            itmcolor = "var(--gob-primary-color-300)";
             break;
         case "light":
-            itmcolor = "#C7C7C7";
+            itmcolor = "var(--gob-secondary-color-400";
             break;
         default:
-            itmcolor = "#FFFFFF"
+            itmcolor = "var(--gob-secondary-color-100)"
     }
 
     let rotation = "0deg"
@@ -57,11 +57,11 @@ export const GobMainCard = ({
         }
     }
 
-    return <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", backgroundColor: "#413E43", width: width, height: height, padding: padding, borderRadius: "2px", gap: "0px" }}>
+    return <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-start", backgroundColor: "var(--gob-secondary-color-600)", width: width, height: height, padding: padding, borderRadius: "2px", gap: "0px" }}>
         <img src={comillascolor === "white" ? comillaswhite : (comillascolor === "orange" ? comillasorange : comillaslight)} style={{ rotate: rotation }} />
         <div style={{ display: "flex", flexDirection: "row", gap: "10px" }}>
-            <h2 style={{ color: "#FFFFFF", fontFamily: "Ubuntu", fontWeight: "200", fontSize: "40px" }}>{title1}</h2>
-            <h2 style={{ color: "#FFFFFF", fontFamily: "Ubuntu", fontWeight: "700", fontSize: "40px" }}>{title2}</h2>
+            <h2 style={{ color: "var(--gob-secondary-color-100)", fontFamily: "Ubuntu", fontWeight: "200", fontSize: "40px" }}>{title1}</h2>
+            <h2 style={{ color: "var(--gob-secondary-color-100)", fontFamily: "Ubuntu", fontWeight: "700", fontSize: "40px" }}>{title2}</h2>
         </div>
         <div style={{ display: "flex", flexDirection: "column", justifyItems: "flex-start" }}>
             {items.map((obj, index) => (<h4 key={index} style={{ color: itmcolor, fontFamily: "Ubuntu", fontWeight: "200", fontSize: "19px", textTransform: "uppercase", margin: "0px", textAlign: "justify" }}>{obj}</h4>))}

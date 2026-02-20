@@ -27,8 +27,8 @@ function Select({setvalue, options, size=50, placeholder="Seleccionar Tipo"}){
     }
 
     return <div className="general-select-container" style={{maxHeight: ((size*60)/50)}}>
-        <div className="general-select-block" onClick={() => handleToggle()} style={{backgroundColor: (isopen === true ? "#F5F5F5" : "white"), height: size, width: ((size * 280)/50), borderRadius: ((size * 4)/50)}}>
-            <div className="general-select-icon-container" style={{backgroundColor: (isopen === true ? "#EC6608" : "#413E43"), height: size, width: size}}>
+        <div className="general-select-block" onClick={() => handleToggle()} style={{backgroundColor: (isopen === true ? "var(--gob-secondary-color-200)" : "white"), height: size, width: ((size * 280)/50), borderRadius: ((size * 4)/50)}}>
+            <div className="general-select-icon-container" style={{backgroundColor: (isopen === true ? "var(--gob-primary-color-300)" : "var(--gob-secondary-color-600)"), height: size, width: size}}>
                 <img src={lock} style={{height: ((size*27)/50), width: ((size*27)/50)}} />
             </div>
             <div className="general-select-placeholder" style={{marginLeft: ((size*10)/50), fontSize: ((size*14)/50), fontWeight: ((size*400)/50), width: ((size*120)/50)}}>{placeholder}</div>

@@ -48,7 +48,7 @@ const Menu: React.FC<MenuProps> = ({children, variant=1, height="auto", width="a
     if(variant === 1){
         estilos1 = {...estilos1, backgroundColor: "transparent"}
     }else{
-        estilos1 = {...estilos1, backgroundColor: "#C7C7C7"}
+        estilos1 = {...estilos1, backgroundColor: "var(--gob-secondary-color-400)"}
     }
 
     return <div className="menu-gob-container">

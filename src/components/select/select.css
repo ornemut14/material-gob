@@ -25,7 +25,7 @@
 }
 
 .general-select-placeholder{
-    color: #615E62;
+    color: var(--gob-secondary-color-500);
     white-space: nowrap;
 }
 
@@ -38,13 +38,13 @@
     flex-direction: column;
     height: fit-content;
     text-align: justify;
-    background-color: #F5F5F5;
+    background-color: var(--gob-secondary-color-200);
     box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.3);
     z-index: 999;
 }
 
 .general-select-option{
-    color: #413E43;
+    color: var(--gob-secondary-color-600);
 }
 
 .general-select-option:hover{

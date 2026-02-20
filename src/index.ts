@@ -1,4 +1,4 @@
-import './styles/theme.css';
+//import './styles/theme.css';
 export { GobButton } from './components/Button';
 export { GobIcon } from './components/GobIcon';
-export { GobMainCard } from './components/GobMainCard';
+export { GobMainCard } from './components/MainCard';

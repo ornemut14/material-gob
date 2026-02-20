@@ -1,6 +1,5 @@
 import { useState } from "react";
-import UserplusIcon from "./components/Icons/usericons/userplusicon/userplusicon";
-import MainCard from "./components/maincard/maincard";
+import { GobMainCard } from "./components/maincard/maincard";
 import Menu from "./components/menu/menu";
 import { MenuOption } from "./components/menu/menuoptions/menuoption";
 import { GobButton } from "./components/Button/Button";
@@ -23,7 +22,7 @@ function App() {
 
   return (
     <div style={{ display: "flex", gap: "20px", padding: "40px" }}>
-      <MainCard items={["Trabajo", "Televisores"]} itemscolor="light" />
+      <GobMainCard items={["Trabajo", "Televisores"]} itemscolor="light" />
       <div style={{position: "relative", top: "40px"}}>
       <Menu isopen={ismenuopen} axis="vertical" variant={2}>
         <MenuOption text="consulta" onclick={() => alert("hola")} variant={3} />
