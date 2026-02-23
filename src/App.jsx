@@ -4,8 +4,8 @@ import Menu from "./components/menu/menu";
 import { MenuOption } from "./components/menu/menuoptions/menuoption";
 import { GobButton } from "./components/Button/Button";
 import { GobIcon } from "./components/GobIcon";
-import Select from "./components/select/select";
 import GantDiagram from "./components/gantdiagram/gantdiagram";
+import { GobSelect } from "./components/select";
 
 function App() {
 
@@ -31,7 +31,7 @@ function App() {
       </Menu>
       </div>
       <GobButton onClick={() => handleMenuToggle()} PrimaryiconName="calendarday" SecondaryiconName="marketplace">hola</GobButton>
-      <Select setvalue={setSelectvalue} options={selectoptions} placeholder="Selecciona algo" />
+      <GobSelect setvalue={setSelectvalue} options={selectoptions} placeholder="Selecciona algo" />
       <GantDiagram />
     </div>
   );
