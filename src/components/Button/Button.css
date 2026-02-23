@@ -20,8 +20,6 @@
 
 /* ================= SIZES ================= */
 
-/* ================= SIZES ================= */
-
 .ui-btn.small {
   width: 99px;
   height: 33px;
@@ -45,34 +43,26 @@
 
 /* Default */
 .ui-btn.primary.default {
-  /* background: #EC6608; */
   background: var(--gob-primary-color-300);
-  /* color: #FFFFFF; */
   color: var(--gob-secondary-color-100);
 }
 
 /* Hover */
 .ui-btn.primary:hover {
-  /* background: #EF8031; */
   background: var(--gob-primary-color-200);
-  /* color: #FFFFFF; */
   color: var(--gob-secondary-color-100);
 }
 
 /* Pressed */
 .ui-btn.primary:active {
-  /* background: #C55507; */
   background: var(--gob-primary-color-400);
-  /* color: #FFFFFF; */
   color: var(--gob-secondary-color-100);
 }
 
 /* Disabled */
 .ui-btn.primary.disabled,
 .ui-btn.primary:disabled {
-  /* background: #F9CCAD; */
   background: var(--gob-primary-color-100);
-  /* color: #FFFFFF; */
   color: var(--gob-secondary-color-100);
 }
 
@@ -80,34 +70,26 @@
 
 /* Default */
 .ui-btn.secondary.default {
-  /* background: #413E43; */
   background: var(--gob-secondary-color-600);
-  /* color: #FFFFFF; */
   color: var(--gob-secondary-color-100);
 }
 
 /* Hover */
 .ui-btn.secondary:hover {
-  /* background: #615E62; */
   background: var(--gob-secondary-color-500);
-  /* color: #FFFFFF; */
   color: var(--gob-secondary-color-100);
 }
 
 /* Pressed */
 .ui-btn.secondary:active {
-  /* background: #C7C7C7; */
   background: var(--gob-secondary-color-400);
-  /* color: #FFFFFF; */
   color: var(--gob-secondary-color-100);
 }
 
 /* Disabled */
 .ui-btn.secondary.disabled,
 .ui-btn.secondary:disabled {
-  /* background: #F5F5F5; */
   background: var(--gob-secondary-color-200);
-  /* color: #C7C7C7; */
   color: var(--gob-secondary-color-400);
 }
 
@@ -116,21 +98,18 @@
 /* Default */
 .ui-btn.text.default {
   background: transparent;
-  /* color: #000000; */
   color: var(--gob-secondary-color-700);
 }
 
 /* Hover */
 .ui-btn.text:hover {
   background: transparent;
-  /* color: #615E62; */
   color: var(--gob-secondary-color-500);
 }
 
 /* Pressed */
 .ui-btn.text:active {
   background: transparent;
-  /* color: #C7C7C7; */
   color: var(--gob-secondary-color-400);
 }
 
@@ -138,7 +117,6 @@
 .ui-btn.text.disabled,
 .ui-btn.text:disabled {
   background: transparent;
-  /* color: #F5F5F5; */
   color: var(--gob-secondary-color-200);
 }
 

@@ -23,6 +23,7 @@ export type GobGantDiagramProps = {
 
 export interface TableProps {
     fecha: Dayjs
+    title?: string
     data: Area[]
 }
 

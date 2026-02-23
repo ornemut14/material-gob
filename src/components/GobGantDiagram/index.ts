@@ -1,2 +1,2 @@
 export { GobGantDiagram } from './GobGantDiagrm';
-export { GobGantDiagramProps } from './GobGantDiagram.types';
+export type { GobGantDiagramProps } from './GobGantDiagram.types';

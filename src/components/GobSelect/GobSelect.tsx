@@ -12,11 +12,14 @@ export const GobSelect = ({
     placeholder = "Seleccionar Tipo"
 }: GobSelectProps) => {
     const [isopen, setIsopen] = useState<boolean>(false)
+    const [placeoption, setPlaceoption] = useState<string | null>(null)
     const handleClose = () => setIsopen(false)
     const handleToggle = () => setIsopen(prev => !prev)
     const handleSeleccion = (valor: number) => {
         // console.log(valor, "valor guardado")
         handleClose()
+        console.log(valor, "numero seleccionado")
+        setPlaceoption(options[valor])
         setvalue(valor)
     }
 
@@ -62,7 +65,7 @@ export const GobSelect = ({
                         width: (size * 120) / 50
                     }}
                 >
-                    {placeholder}
+                    {placeoption === null ? placeholder : placeoption}
                 </div>
 
                 {isopen ? (

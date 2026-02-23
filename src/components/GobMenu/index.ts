@@ -1,2 +1,2 @@
 export { GobMenu } from "./GobMenu";
-export { GobMenuProps } from "./GobMenu.types";
+export type { GobMenuProps } from "./GobMenu.types";

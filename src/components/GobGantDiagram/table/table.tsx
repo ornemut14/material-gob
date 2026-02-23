@@ -7,9 +7,12 @@ import { Rowpainter } from "./rowpainter/rowpainter"
 
 type DayCell = [string, string]
 
-export const Table = ({ fecha, data }: TableProps) => {
+export const Table = ({
+    fecha,
+    title = 'EMPLEADOS POR ÁREA',
+    data
+}: TableProps) => {
     const hoy = dayjs().locale("es")
-
     const [listdays, setListdays] = useState<DayCell[]>([])
 
     useEffect(() => {
@@ -48,7 +51,7 @@ export const Table = ({ fecha, data }: TableProps) => {
             <table className="diagram-inner-table">
                 <thead className="diagram-inner-thead">
                     <tr>
-                        <th className="diagram-inner-th">EMPLEADOS POR ÁREA</th>
+                        <th className="diagram-inner-th">{title}</th>
 
                         {listdays.map(([day, number], index) => (
                             <th className="gd-days-h-container" key={index}>
