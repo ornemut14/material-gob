@@ -1,6 +1,11 @@
 .Gantdiagram-container{
     width: 1000px;
     height: fit-content;
+    background-color: white;
+}
+
+.G-Diagram-H-Yearandmonth{
+    color: white
 }
 
 .G-Diagram-Month-container{

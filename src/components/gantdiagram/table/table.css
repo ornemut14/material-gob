@@ -16,6 +16,7 @@
 
 .diagram-inner-th{
     background-color: #C7C7C7;
+    color: black;
 }
 
 .gd-days-h{
@@ -23,6 +24,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: black;
 }
 
 .gd-days-h-container{
@@ -38,4 +40,5 @@
 
 .gd-area-rows-name{
     padding-left: 20px;
+    color: black;
 }
